@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <title>Yummy</title>
+</head>
+<body>
+<!-- ========== on Load ========= -->
+<div class="spinner">
+  <span class="loader"></span>
+</div>
+
+<!-- =========== Nav ============= -->
+<div class="nav">
+  <div class="row">
+    <div class="hidden-part col-10 py-4 bg-black text-white ps-5 pe-3 d-flex flex-column justify-content-between">
+      <ul class="py-2 overflow-hidden">
+        <li class="mb-3"><a href="#">Search</a></li>
+        <li class="mb-3"><a href="categories.html">Categories</a></li>
+        <li class="mb-3"><a href="area.html">Area</a></li>
+        <li class="mb-3"><a href="ingred.html">Ingredients</a></li>
+        <li class="mb-3"><a href="contact.html">Contact US</a></li>
+      </ul>
+      <div class="contact">
+        <div class="links">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-solid fa-globe"></i></a>
+        </div>
+        <div class="copyright">
+          <p>Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="visible-part col-2 bg-white py-4 d-flex flex-column justify-content-between align-items-center">
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+      </div>
+      <div class="dropDown-list text-center">
+        <i class="fa-solid fa-bars fs-1 show-nav"></i>
+        <i class="fa-solid fa-x fs-2 close-nav d-none"></i>
+      </div>
+      <div class="setting text-center">
+        <i class="fa-solid fa-globe"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ========= Search Form ========= -->
+  <div class="form">
+    <div class="container my-5">
+      <div class="d-flex mx-5 justify-content-between gap-md-4 flex-wrap flex-md-nowrap">
+        <input onkeyup="searchByName(this.value)" class="col-12 col-md-6 bg-black p-2 border border-1 border-white rounded-3" type="text" id="byName" placeholder="Search By Name">
+        <input onkeyup="searchByFLetter(this.value)" class="col-12 col-md-6 bg-black p-2 border border-1 border-white rounded-3" type="text" maxlength="1" id="byFirstLetter" placeholder="Search By First Letter">
+      </div>
+    </div>
+  </div>
+
+    <div class="dishes">
+      <div class="container">
+        <div class="row g-3">
+        </div>
+      </div>
+    </div>
+
+
+
+
+      <!-- =========== Dish Details ============= -->
+  <div class="dish-det d-none">
+    <div class="container my-5 px-md-5">
+      <div class="row text-white">
+      </div>
+    </div>
+  </div>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- <script src="js/jQueryScript.js"></script> -->
+    <script src="js/search.js"></script>
+</body>
+</html>
